@@ -1,5 +1,5 @@
 a = "Hello World"
-a *= 3
+a *= 4
 a = a[0:18]
 print(a)
 if True:
