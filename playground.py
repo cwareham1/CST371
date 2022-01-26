@@ -1,5 +1,5 @@
 A = "Hello World"
-A *= 4
+A *= 8
 a = A[0:18]
 print(a)
 
