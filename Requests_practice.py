@@ -72,14 +72,3 @@ def main():
             'By the pound?': object.bythepound, 'Has savings?': object.hassavings, 'Savings': object.savings})
 
 main()
-
-
-
-
-
-
-
-
-
-
-
