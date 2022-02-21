@@ -1,6 +1,16 @@
+from ast import Raise
+from cmath import e
 import re
 import requests
 import csv
+import logging
+
+
+logging.basicConfig(filename="loginfo.log",
+ format='%(asctime)s %(message)s',filemode='a')
+
+logger = logging.getLogger()
+logger.setLevel(logging.WARNING)
 
 class Product:
 
@@ -17,10 +27,15 @@ class Product:
 
 
 # get the HTML first
-headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-url = 'https://tynerpondfarm.com/collections/in-stock'
-page = requests.get(url, headers=headers)
-Html = str(page.content)
+try:
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+    url = 'https://tynerpondfarm.com/collections/in-stock'
+    page = requests.get(url, headers=headers)
+    Html = str(page.content)
+except BaseException as e:
+    logger.error(e)
+
+logger.info('tyner webpage recieved')
 
 #regex
 rawlist = re.findall(
@@ -53,14 +68,21 @@ def main():
     products = []
     for i in range(len(prodlist)):
         products.append(Product(prodlist[i], prices[i], savings[i]))
+    
+    #track if list was made        
+    if len(prodlist):
+        logger.info('tyner list populated')
+    else:
+        logger.error('tyner list NOT populated!')
 
     # write csv file
-        with open('tynerproducts.csv', 'w', newline='') as file:
-            fieldnames = ['Name', 'Price', 'Has savings?', 'Savings']
-            writer = csv.DictWriter(file, fieldnames=fieldnames)
+    with open('tynerproducts.csv', 'w', newline='') as file:
+        fieldnames = ['Name', 'Price', 'Has savings?', 'Savings']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
 
-            writer.writeheader()
-            for object in products:
-                writer.writerow({'Name': object.name, 'Price': object.price,
-                'Has savings?': object.hasSavings(), 'Savings': object.savings})
-main()
+        writer.writeheader()
+        for object in products:
+            writer.writerow({'Name': object.name, 'Price': object.price,
+            'Has savings?': object.hasSavings(), 'Savings': object.savings})
+
+    logger.info('tyner CSV successful created')

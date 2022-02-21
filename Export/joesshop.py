@@ -1,6 +1,14 @@
 import requests
 import re
 import csv
+import logging
+
+
+logging.basicConfig(filename="loginfo.log",
+ format='%(asctime)s %(message)s',filemode='a')
+
+logger = logging.getLogger()
+logger.setLevel(logging.WARNING)
 
 class Product:
 
@@ -40,6 +48,8 @@ url = 'https://joesbutchershop.com'
 page = requests.get(url, headers=headers)
 Html = page.text
 
+logger.info('Joes webpage recieved')
+
 
 # regex heavy lifting
 rawlist = re.findall(
@@ -54,6 +64,12 @@ def main():
     for item in rawlist:
         prodlist.append(
             Product(name=item[0], price=item[1], savings=item[2]))
+
+#track if list was made        
+    if len(prodlist):
+        logger.info('joes list populated')
+    else:
+        logger.error('Joes list NOT populated!')
 
     for product in prodlist:
         product.isBythepound()
@@ -70,5 +86,6 @@ def main():
         for object in prodlist:
             writer.writerow({'Name': object.name, 'Price': object.price, 
             'By the pound?': object.bythepound, 'Has savings?': object.hassavings, 'Savings': object.savings})
-
+    
+        logger.info('joes CSV successful created')
 main()
