@@ -1,0 +1,40 @@
+2022-02-21 13:40:03,219 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-02-21 13:40:03,318 https://tynerpondfarm.com:443 "GET /collections/in-stock HTTP/1.1" 200 None
+2022-02-21 13:40:03,346 tyner webpage recieved
+2022-02-21 13:40:03,355 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-02-21 13:40:03,490 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-02-21 13:40:03,529 Joes webpage recieved
+2022-02-21 13:40:03,532 joes list populated
+2022-02-21 13:40:03,533 joes CSV successful created
+2022-02-21 13:40:03,534 tyner list populated
+2022-02-21 13:40:03,535 tyner CSV successful created
+2022-02-21 13:40:03,535 joes list populated
+2022-02-21 13:40:03,536 joes CSV successful created
+2022-02-21 13:45:05,356 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-02-21 13:45:05,678 https://tynerpondfarm.com:443 "GET /collections/in-stock HTTP/1.1" 200 None
+2022-02-21 13:45:05,690 tyner webpage recieved
+2022-02-21 13:45:05,720 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-02-21 13:45:05,851 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-02-21 13:45:05,886 Joes webpage recieved
+2022-02-21 13:45:05,889 joes list populated
+2022-02-21 13:45:05,890 joes CSV successful created
+2022-02-21 13:45:05,892 tyner list populated
+2022-02-21 13:45:05,893 tyner CSV successful created
+2022-02-21 13:45:05,893 joes list populated
+2022-02-21 13:45:05,894 joes CSV successful created
+2022-02-21 13:55:17,533 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-02-21 13:55:17,897 https://tynerpondfarm.com:443 "GET /collections/in-stock HTTP/1.1" 200 None
+2022-02-21 13:55:17,913 tyner webpage recieved
+2022-02-21 13:55:17,922 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-02-21 13:55:18,077 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-02-21 13:55:18,102 Joes webpage recieved
+2022-02-21 13:55:18,105 joes list populated
+2022-02-21 13:55:18,105 joes CSV successful created
+2022-02-21 13:55:18,107 tyner list populated
+2022-02-21 13:55:18,108 tyner CSV successful created
+2022-02-21 13:55:18,108 joes list populated
+2022-02-21 13:55:18,109 joes CSV successful created
+2022-02-21 14:05:15,962 Webpage NOT recieved!
+2022-02-21 14:08:28,125 HTTPSConnectionPool(host='tynerpondfarm.com', port=443): Max retries exceeded with url: /collections/in-stock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd8417168d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2022-02-21 14:13:18,369 HTTPSConnectionPool(host='tynerpondfarm.com', port=443): Max retries exceeded with url: /collections/in-stock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8da762a358>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2022-02-21 14:35:41,420 HTTPSConnectionPool(host='tynerpondfarm.com', port=443): Max retries exceeded with url: /collections/in-stock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9a2cdcf390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
