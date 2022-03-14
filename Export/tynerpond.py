@@ -38,9 +38,13 @@ except BaseException as e:
 logger.info('tyner webpage recieved')
 
 #regex
-rawlist = re.findall(
-    r"<a.*?<h4 class=\"title\">(.*?)</h4>.*?<span class=\"price\".*?((?:[0-9]{1,2}\.[0-9]{2}).*?)</span>.*?</a>"
-    , Html)
+def intialParse(html):
+    rawlist = re.findall(
+        r"<a.*?<h4 class=\"title\">(.*?)</h4>.*?<span class=\"price\".*?((?:[0-9]{1,2}\.[0-9]{2}).*?)</span>.*?</a>"
+        , html)
+    return rawlist
+
+rawlist = intialParse(Html)
 
 
 def main():
