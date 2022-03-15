@@ -12,13 +12,15 @@ logger.setLevel(logging.DEBUG)
 #http get class
 class PageGet:
 
-    def __init__(self, url, company):
-
+    def __init__(self, url=None, company=None, html=None):
         self.url = url
         self.company =  company
+        self.html = html
+
+    def httpGet(self):
         try:
             headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-            page = requests.get(url, headers=headers)
+            page = requests.get(self.url, headers=headers)
             self.html = str(page.content)
             logger.info(self.company, 'webpage recieved')
         except:
@@ -27,10 +29,11 @@ class PageGet:
 #product class
 class Product:
 
-    def __init__(self, name=None, price=None, savings=None):
+    def __init__(self, name=None, price=None, savings=None, domain=None):
         self.name = name
         self.price = price
         self.savings = savings
+        self.domain = domain
         if self.savings:
             self.hassavings = True
         else:
@@ -39,28 +42,32 @@ class Product:
 #product list class
 class ProductList(Product):
 
-    def __init__(self):
+    def __init__(self, domain):
         super().__class__
         self.productlist = list()
 
 #persistance class to export data to CSV
 class PersistToDatabase(ProductList):
 
-    def __init__(self, filename):
+    def __init__(self, filename=None):
         super().__class__
+        self.filename = filename
 
+
+    def persist(self):
         try:
-            with open(filename, 'w', newline='') as file:
+            with open(self.filename, 'w', newline='') as file:
                 fieldnames = ['Name', 'Price', 'Has savings?', 'Savings']
                 writer = csv.DictWriter(file, fieldnames=fieldnames)
 
                 writer.writeheader()
                 for object in self.productlist:
                     writer.writerow({'Name': object.name, 'Price': object.price,
-                    'Has savings?': object.hassavings, 'Savings': object.savings})
+                    'Has savings?': object.hassavings, 'Savings': object.savings, 
+                    'Domain': object.domain})
 
-                    logger.info(filename, 'created')
+                    logger.info(self.filename, 'persisted')
 
         except:
-            logger.error(filename, 'NOT created')
+            logger.error(self.filename, 'NOT persisted')
 
