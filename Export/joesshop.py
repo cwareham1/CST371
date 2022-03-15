@@ -8,7 +8,7 @@ logging.basicConfig(filename="loginfo.log",
  format='%(asctime)s %(message)s',filemode='a')
 
 logger = logging.getLogger()
-logger.setLevel(logging.WARNING)
+logger.setLevel(logging.DEBUG)
 
 class Product:
 

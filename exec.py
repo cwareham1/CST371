@@ -1,8 +1,8 @@
-# from Export import Requests_practice
-# from Export import tynerpond
-# from tynerpond import main
-from Export.tynerpond import main as tp
-from Export.joesshop import main as joe
+#main
+import Export.persistance
+import Export.tynerpond
+import Export.joesshop
 
-tp()
-joe()
+tyGet = Export.persistance.PageGet('https://tynerpondfarm.com/collections/pasture-raised-beef', 'Tyner')
+Export.tynerpond.intialParse(tyGet.html)
+
