@@ -54,35 +54,14 @@ def main():
         savings.append(None)
 
     #clean product names
-    for i in range(len(prodlist)):
+    for i,_ in enumerate(prodlist):
         prodlist[i]  = re.search(r"[a-zA-Z\s\u2019\~\/\,\$\.\%\u002D\(\)\u20130-9]*", prodlist[i]).group(0)
 
     #clean prices and savings
-    for i in range(len(prices)):
+    for i,_ in enumerate(prices):
         numlist = re.findall(r"([0-9]{1,2}\.[0-9]{2}\.{0,5}).*?([0-9]{1,2}\.[0-9]{2}\.{0,5})*?", prices[i])
         prices[i] = numlist[0]
         if len(numlist) == 2:
             savings[i] = numlist[1]
-
-    #make product objects
-    products = []
-    for i in range(len(prodlist)):
-        products.append(Product(prodlist[i], prices[i], savings[i]))
+    return prodlist, prices, savings
     
-    #track if list was made        
-    if len(prodlist):
-        logger.info('tyner list populated')
-    else:
-        logger.error('tyner list NOT populated!')
-
-    # write csv file
-    with open('tynerproducts.csv', 'w', newline='') as file:
-        fieldnames = ['Name', 'Price', 'Has savings?', 'Savings']
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
-
-        writer.writeheader()
-        for object in products:
-            writer.writerow({'Name': object.name, 'Price': object.price,
-            'Has savings?': object.hasSavings(), 'Savings': object.savings})
-
-    logger.info('tyner CSV successful created')
