@@ -16,13 +16,14 @@ def regex(html):
         savings.append(None)
 
     #clean product names
-    for i in range(len(prodlist)):
+    for i,_ in enumerate(prodlist):
         prodlist[i]  = re.search(r"[a-zA-Z\s\u2019\~\/\,\$\.\%\u002D\(\)\u20130-9]*", prodlist[i]).group(0)
 
     #clean prices and savings
-    for i in range(len(prices)):
+    for i,_ in enumerate(prices):
         numlist = re.findall(r"([0-9]{1,2}\.[0-9]{2}\.{0,5}).*?([0-9]{1,2}\.[0-9]{2}\.{0,5})*?", prices[i])
         prices[i] = numlist[0]
         if len(numlist) == 2:
             savings[i] = numlist[1]
     return prodlist, prices, savings
+    

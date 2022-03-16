@@ -12,12 +12,12 @@ logger.setLevel(logging.DEBUG)
 #http get class
 class PageGet:
 
-    def __init__(self, url=None, company=None, html=None):
+    def __init__(self, url=None, company=None):
         self.url = url
         self.company =  company
-        self.html = html
+        self.html = None
 
-    def httpGet(self):
+    def http_get(self):
         try:
             headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
             page = requests.get(self.url, headers=headers)
@@ -28,7 +28,6 @@ class PageGet:
 
 #product class
 class Product:
-
     def __init__(self, name=None, price=None, savings=None, domain=None):
         self.name = name
         self.price = price
@@ -39,35 +38,26 @@ class Product:
         else:
             self.hassavings = False
 
-#product list class
-class ProductList(Product):
 
-    def __init__(self, domain):
-        super().__class__
-        self.productlist = list()
-
-#persistance class to export data to CSV
-class PersistToDatabase(ProductList):
+class PersistToDatabase:
 
     def __init__(self, filename=None):
-        super().__class__
         self.filename = filename
 
 
-    def persist(self):
+    def persist(self, prod_list):
         try:
-            with open(self.filename, 'w', newline='') as file:
+            with open(self.filename, 'w', newline='', encoding='UTF-8') as file:
                 fieldnames = ['Name', 'Price', 'Has savings?', 'Savings']
                 writer = csv.DictWriter(file, fieldnames=fieldnames)
 
                 writer.writeheader()
-                for object in self.productlist:
-                    writer.writerow({'Name': object.name, 'Price': object.price,
-                    'Has savings?': object.hassavings, 'Savings': object.savings, 
-                    'Domain': object.domain})
+                for i in prod_list:
+                    writer.writerow({'Name': i.name, 'Price': i.price,
+                    'Has savings?': i.hassavings, 'Savings': i.savings,
+                    'Domain': i.domain})
 
                     logger.info(self.filename, 'persisted')
-
+        # pylint: disable=bare-except
         except:
             logger.error(self.filename, 'NOT persisted')
-

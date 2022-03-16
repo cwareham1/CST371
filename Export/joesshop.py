@@ -7,3 +7,4 @@ def regex(html):
         ,html)
 
     return rawlist
+    
