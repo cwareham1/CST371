@@ -14,17 +14,17 @@ class PageGet:
 
     def __init__(self, url=None, company=None):
         self.url = url
-        self.company =  company
+        self.company =  str(company)
         self.html = None
 
     def http_get(self):
-        try:
-            headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-            page = requests.get(self.url, headers=headers)
-            self.html = str(page.content)
-            logger.info(self.company, 'webpage recieved')
-        except:
-            logger.error(self.company, 'webpage NOT recieved')
+        #try:
+        headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+        page = requests.get(self.url, headers=headers)
+        self.html = str(page.content)
+            #logger.info(self.company, "webpage recieved")
+        #except:
+            #logger.error(self.company, 'webpage NOT recieved')'''
 
 #product class
 class Product:
@@ -42,13 +42,13 @@ class Product:
 class PersistToDatabase:
 
     def __init__(self, filename=None):
-        self.filename = filename
+        self.filename = str(filename)
 
 
-    def persist(self, prod_list):
+    def persist(self, prod_list : list):
         try:
             with open(self.filename, 'w', newline='', encoding='UTF-8') as file:
-                fieldnames = ['Name', 'Price', 'Has savings?', 'Savings']
+                fieldnames = ['Name', 'Price', 'Has savings?', 'Savings', 'Domain']
                 writer = csv.DictWriter(file, fieldnames=fieldnames)
 
                 writer.writeheader()
@@ -61,3 +61,6 @@ class PersistToDatabase:
         # pylint: disable=bare-except
         except:
             logger.error(self.filename, 'NOT persisted')
+
+print('')
+
