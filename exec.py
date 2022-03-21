@@ -13,10 +13,11 @@ tyner = Export.tynerpond.Tyner(ty_get.html)
 tyner.prep_data()
 
 for i,_ in enumerate(tyner.namelist):
-    product_list.append(Export.persistance.Product(name=tyner.namelist[i],
-    price=tyner.prices[i],
-    savings=tyner.savings[i],
-    domain='Tyner'))
+    product_list.append(Export.persistance.Product(
+        name=tyner.namelist[i],
+        price=tyner.prices[i],
+        savings=tyner.savings[i],
+        domain='Tyner'))
 
 #Joes butcher shop
 

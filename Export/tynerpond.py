@@ -3,7 +3,7 @@ import re
 
 class Tyner:
 
-    def __init__(self, html):
+    def __init__(self, html=None):
         self.rawlist = None
         self.namelist = None
         self.prices = None
