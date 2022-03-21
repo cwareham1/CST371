@@ -23,8 +23,6 @@ class PageGet:
         headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
         page = requests.get(self.url, headers=headers)
         self.html = str(page.content)
-        with open('tyner.txt', 'w') as file:
-            file.write(self.html)
             #logger.info(self.company, "webpage recieved")
         #except:
             #logger.error(self.company, 'webpage NOT recieved')'''
