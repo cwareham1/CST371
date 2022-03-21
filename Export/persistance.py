@@ -1,6 +1,7 @@
 import logging
 import csv
 import requests
+# pylint: disable=line-too-long
 
 #create logger object
 logging.basicConfig(filename="loginfo.log",
@@ -38,12 +39,10 @@ class Product:
         else:
             self.hassavings = False
 
-
 class PersistToDatabase:
 
     def __init__(self, filename=None):
         self.filename = str(filename)
-
 
     def persist(self, prod_list : list):
         try:
