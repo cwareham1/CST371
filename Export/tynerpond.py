@@ -65,3 +65,4 @@ def main():
             savings[i] = numlist[1]
     return prodlist, prices, savings
     
+    
