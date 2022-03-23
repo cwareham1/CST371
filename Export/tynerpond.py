@@ -13,7 +13,7 @@ class Tyner:
     def regex(self):
         #regex
         self.rawlist = re.findall(
-            r"<a.*?<h4 class=\"title\">(.*?)</h4>.*?<s1,2}\.[0-9]{2}).*?)</span>.*?</a>" #pan class=\"price\".*?((?:[0-9]{
+            r"<a.*?<h4 class=\"title\">(.*?)</h4>.*?<span class=\"price\".*?((?:[0-9]{1,2}\.[0-9]{2}).*?)</span>.*?</a>"
             , self.html)
 
     def make_temp_lists(self):
