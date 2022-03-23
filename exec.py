@@ -1,22 +1,29 @@
-# from Export import Requests_practice
-# from Export import tynerpond
-# from tynerpond import main
-from Export.tynerpond import main as tp
-from Export.joesshop import main as joe
+#main
+import Export.persistance
+import Export.tynerpond
+import Export.joesshop
 
-tyGet = Export.persistance.PageGet(
+product_list = []
+
+#Tyner pond farm
+ty_get = Export.persistance.PageGet(
     url='https://tynerpondfarm.com/collections/pasture-raised-beef', company='Tyner')
-jsGet = Export.persistance.PageGet(url='https://joesbutchershop.com/', company= 'Joes')
+ty_get.http_get()
+tyner = Export.tynerpond.Tyner(ty_get.html)
+tyner.prep_data()
 
-tyGet.http_get()
-jsGet.http_get()
+for i,_ in enumerate(tyner.namelist):
+    product_list.append(Export.persistance.Product(
+        name=tyner.namelist[i],
+        price=tyner.prices[i],
+        savings=tyner.savings[i],
+        domain='Tyner'))
 
-productsTy = Export.tynerpond.regex(tyGet.html)
-productsJs = Export.joesshop.regex(jsGet.html)
+#Joes butcher shop
 
-'''
-for i in productsJs:
-    stuff.productlist.append(
-        name=i[0], price=i[1], savings=i[2], domain='Joes')
-'''
+#export last
+exporter = Export.persistance.PersistToDatabase(filename='products.csv')
+exporter.persist(product_list)
+
+
 print('')

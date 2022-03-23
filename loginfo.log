@@ -1,40 +1,194 @@
-2022-02-21 13:40:03,219 Starting new HTTPS connection (1): tynerpondfarm.com:443
-2022-02-21 13:40:03,318 https://tynerpondfarm.com:443 "GET /collections/in-stock HTTP/1.1" 200 None
-2022-02-21 13:40:03,346 tyner webpage recieved
-2022-02-21 13:40:03,355 Starting new HTTPS connection (1): joesbutchershop.com:443
-2022-02-21 13:40:03,490 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
-2022-02-21 13:40:03,529 Joes webpage recieved
-2022-02-21 13:40:03,532 joes list populated
-2022-02-21 13:40:03,533 joes CSV successful created
-2022-02-21 13:40:03,534 tyner list populated
-2022-02-21 13:40:03,535 tyner CSV successful created
-2022-02-21 13:40:03,535 joes list populated
-2022-02-21 13:40:03,536 joes CSV successful created
-2022-02-21 13:45:05,356 Starting new HTTPS connection (1): tynerpondfarm.com:443
-2022-02-21 13:45:05,678 https://tynerpondfarm.com:443 "GET /collections/in-stock HTTP/1.1" 200 None
-2022-02-21 13:45:05,690 tyner webpage recieved
-2022-02-21 13:45:05,720 Starting new HTTPS connection (1): joesbutchershop.com:443
-2022-02-21 13:45:05,851 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
-2022-02-21 13:45:05,886 Joes webpage recieved
-2022-02-21 13:45:05,889 joes list populated
-2022-02-21 13:45:05,890 joes CSV successful created
-2022-02-21 13:45:05,892 tyner list populated
-2022-02-21 13:45:05,893 tyner CSV successful created
-2022-02-21 13:45:05,893 joes list populated
-2022-02-21 13:45:05,894 joes CSV successful created
-2022-02-21 13:55:17,533 Starting new HTTPS connection (1): tynerpondfarm.com:443
-2022-02-21 13:55:17,897 https://tynerpondfarm.com:443 "GET /collections/in-stock HTTP/1.1" 200 None
-2022-02-21 13:55:17,913 tyner webpage recieved
-2022-02-21 13:55:17,922 Starting new HTTPS connection (1): joesbutchershop.com:443
-2022-02-21 13:55:18,077 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
-2022-02-21 13:55:18,102 Joes webpage recieved
-2022-02-21 13:55:18,105 joes list populated
-2022-02-21 13:55:18,105 joes CSV successful created
-2022-02-21 13:55:18,107 tyner list populated
-2022-02-21 13:55:18,108 tyner CSV successful created
-2022-02-21 13:55:18,108 joes list populated
-2022-02-21 13:55:18,109 joes CSV successful created
-2022-02-21 14:05:15,962 Webpage NOT recieved!
-2022-02-21 14:08:28,125 HTTPSConnectionPool(host='tynerpondfarm.com', port=443): Max retries exceeded with url: /collections/in-stock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd8417168d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
-2022-02-21 14:13:18,369 HTTPSConnectionPool(host='tynerpondfarm.com', port=443): Max retries exceeded with url: /collections/in-stock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8da762a358>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
-2022-02-21 14:35:41,420 HTTPSConnectionPool(host='tynerpondfarm.com', port=443): Max retries exceeded with url: /collections/in-stock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9a2cdcf390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2022-03-15 13:00:14,020 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 13:00:14,161 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 13:00:14,185 Joes webpage recieved
+2022-03-15 13:00:14,188 joes list populated
+2022-03-15 13:00:14,194 joes CSV successful created
+2022-03-15 13:00:14,241 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 13:00:14,662 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 13:13:24,348 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 13:13:24,497 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 13:13:24,524 Joes webpage recieved
+2022-03-15 13:13:24,526 joes list populated
+2022-03-15 13:13:24,529 joes CSV successful created
+2022-03-15 13:13:24,533 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 13:13:24,612 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 13:17:13,967 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 13:17:14,107 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 13:17:14,134 Joes webpage recieved
+2022-03-15 13:17:14,136 joes list populated
+2022-03-15 13:17:14,138 joes CSV successful created
+2022-03-15 13:17:14,142 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 13:17:14,222 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 13:17:36,284 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 13:17:36,409 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 13:17:36,436 Joes webpage recieved
+2022-03-15 13:17:36,438 joes list populated
+2022-03-15 13:17:36,439 joes CSV successful created
+2022-03-15 13:17:36,442 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 13:17:36,542 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 13:24:48,292 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 13:24:48,450 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 13:24:48,480 Joes webpage recieved
+2022-03-15 13:24:48,484 joes list populated
+2022-03-15 13:24:48,486 joes CSV successful created
+2022-03-15 13:24:48,489 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 13:24:48,581 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 13:25:05,312 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 13:25:05,636 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 13:25:05,672 Joes webpage recieved
+2022-03-15 13:25:05,674 joes list populated
+2022-03-15 13:25:05,675 joes CSV successful created
+2022-03-15 13:25:05,678 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 13:25:05,772 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:09:35,345 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:09:35,468 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:09:35,492 Joes webpage recieved
+2022-03-15 14:09:35,494 joes list populated
+2022-03-15 14:09:35,496 joes CSV successful created
+2022-03-15 14:09:35,553 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:09:35,649 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:09:59,058 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:09:59,169 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:09:59,194 Joes webpage recieved
+2022-03-15 14:09:59,196 joes list populated
+2022-03-15 14:09:59,196 joes CSV successful created
+2022-03-15 14:09:59,200 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:09:59,291 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:11:32,580 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:11:32,717 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:11:32,745 Joes webpage recieved
+2022-03-15 14:11:32,747 joes list populated
+2022-03-15 14:11:32,748 joes CSV successful created
+2022-03-15 14:11:32,751 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:11:32,888 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:12:43,128 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:12:43,268 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:12:43,294 Joes webpage recieved
+2022-03-15 14:12:43,296 joes list populated
+2022-03-15 14:12:43,297 joes CSV successful created
+2022-03-15 14:12:43,300 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:12:43,585 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:13:05,951 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:13:06,116 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:13:06,165 Joes webpage recieved
+2022-03-15 14:13:06,167 joes list populated
+2022-03-15 14:13:06,168 joes CSV successful created
+2022-03-15 14:13:06,171 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:13:06,250 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:14:33,728 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:14:33,852 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:14:33,877 Joes webpage recieved
+2022-03-15 14:14:33,880 joes list populated
+2022-03-15 14:14:33,883 joes CSV successful created
+2022-03-15 14:14:33,887 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:14:33,980 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:33:47,219 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:33:47,373 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:33:47,401 Joes webpage recieved
+2022-03-15 14:33:47,403 joes list populated
+2022-03-15 14:33:47,405 joes CSV successful created
+2022-03-15 14:33:47,408 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:33:47,511 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 14:47:00,844 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 14:47:00,994 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-15 14:47:01,018 Joes webpage recieved
+2022-03-15 14:47:01,022 joes list populated
+2022-03-15 14:47:01,025 joes CSV successful created
+2022-03-15 14:47:01,031 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 14:47:01,419 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 15:30:28,010 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-15 15:30:28,421 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-15 15:30:28,457 Starting new HTTPS connection (1): joesbutchershop.com:443
+2022-03-15 15:30:28,577 https://joesbutchershop.com:443 "GET / HTTP/1.1" 200 None
+2022-03-20 17:36:40,327 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 17:36:40,926 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 17:39:39,674 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 17:39:40,195 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 17:41:11,179 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 17:41:12,819 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 17:46:59,546 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 17:46:59,825 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 17:48:03,585 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 17:48:03,868 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 17:55:23,495 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 17:55:23,801 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 17:57:58,171 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 17:57:58,476 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:05:10,639 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:05:10,928 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:05:20,502 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:05:20,793 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:06:00,565 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:06:00,861 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:06:16,138 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:06:16,419 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:27:55,259 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:27:55,637 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:30:40,845 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:30:41,151 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:31:41,293 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:31:41,560 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:32:44,475 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:32:44,768 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:34:50,784 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:34:51,076 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:35:38,620 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:35:38,918 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:36:08,293 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:36:08,579 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:40:48,935 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:40:49,248 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:41:11,856 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:41:12,231 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:44:09,018 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:44:09,309 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:44:38,637 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:44:38,931 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:45:15,563 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:45:15,850 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:49:13,541 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:49:13,858 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:52:00,378 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:52:00,681 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:52:53,761 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:52:54,050 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 18:53:15,706 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 18:53:15,977 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 21:05:29,576 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 21:05:30,153 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 21:06:36,609 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 21:06:36,903 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 21:40:07,918 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 21:40:08,386 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 21:40:20,421 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 21:40:20,705 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 21:49:41,437 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 21:49:41,732 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-20 21:50:44,151 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-20 21:50:44,452 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 11:31:29,682 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 11:31:29,863 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 11:32:46,203 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 11:32:46,310 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:03:36,537 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:03:36,827 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:25:37,991 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:25:38,189 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:38:40,463 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:38:40,677 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:40:02,674 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:40:02,774 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:40:36,672 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:40:36,902 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:42:53,358 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:42:53,457 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:43:04,540 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:43:04,850 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 12:43:26,692 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 12:43:26,857 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 13:58:03,682 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 13:58:03,940 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 13:58:39,808 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 13:58:39,969 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
+2022-03-21 13:58:57,172 Starting new HTTPS connection (1): tynerpondfarm.com:443
+2022-03-21 13:58:57,300 https://tynerpondfarm.com:443 "GET /collections/pasture-raised-beef HTTP/1.1" 200 None
