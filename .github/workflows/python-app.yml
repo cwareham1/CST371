@@ -31,4 +31,4 @@ jobs:
         pylint $(git ls-files '*.py') --disable=C0111 --disable=R0903
     - name: Test with unittest
       run: |
-        python3.6 -m unittest test_tynerpond.py
+        unittest
