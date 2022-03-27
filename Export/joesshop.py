@@ -1,4 +1,5 @@
 import re
+# pylint: disable=line-too-long
 
 def regex(html):
     # regex

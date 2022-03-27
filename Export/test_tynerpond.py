@@ -1,5 +1,6 @@
 import unittest
 import tynerpond
+# pylint: disable=line-too-long
 
 class TynerTest(unittest.TestCase):
 

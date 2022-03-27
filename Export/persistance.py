@@ -62,4 +62,3 @@ class PersistToDatabase:
             logger.error(self.filename, 'NOT persisted')
 
 print('')
-
