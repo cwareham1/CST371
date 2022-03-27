@@ -29,6 +29,6 @@ jobs:
     - name: Lint with pylint
       run: |
         pylint $(git ls-files '*.py') --disable=C0111 --disable=R0903
-    - name: Test with unittest
+    - name: Test with pytest
       run: |
-        unittest
+        pytest
