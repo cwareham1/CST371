@@ -27,10 +27,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with pytest
       run: |
-        # stop the build if there are Python syntax errors or undefined names
-        pylint .
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        pylint .
+        pylint tynerpond.py
+        pylint persistance.py
+        pylint exec.py
+        pylint joesshop.py
+        pylint test_tynerpond.py
     - name: Test with unittest
       run: |
         python3.6 -m unittest test_tynerpond.py
