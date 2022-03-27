@@ -45,5 +45,4 @@ class Tyner:
         self.make_temp_lists()
         self.clean_product_names()
         self.clean_prices_and_savings()
-
         
