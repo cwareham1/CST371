@@ -27,11 +27,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with pytest
       run: |
-        pylint tynerpond.py
-        pylint persistance.py
-        pylint exec.py
-        pylint joesshop.py
-        pylint test_tynerpond.py
+        pylint ./tynerpond.py
+        pylint ./persistance.py
+        pylint ./exec.py
+        pylint ./joesshop.py
+        pylint ./test_tynerpond.py
     - name: Test with unittest
       run: |
         python3.6 -m unittest test_tynerpond.py
