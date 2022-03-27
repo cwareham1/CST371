@@ -25,13 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with pytest
+    - name: Lint with pylint
       run: |
-        pylint ./tynerpond.py
-        pylint ./persistance.py
-        pylint ./exec.py
-        pylint ./joesshop.py
-        pylint ./test_tynerpond.py
+        pylint $(git ls-files '*.py')
     - name: Test with unittest
       run: |
         python3.6 -m unittest test_tynerpond.py
